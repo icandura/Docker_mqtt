@@ -1,10 +1,10 @@
 # MQTT for Docker(HASS)
 
-¡¡¡¡ÕâÊÇÒ»¸ö¼ÒÓÃµÄ±ãÓÚ Docker °²×°µÄ MQTT ·þÎñÆ÷£¬·þÎñÆ÷²ÉÓÃ `mosquitto`¡£Ö÷ÒªÄÚÈÝ²ÎÕÕ [ncarlier/mqtt](https://hub.docker.com/r/ncarlier/mqtt)¡£µ«ÊÇ¼ÒÀïÖ÷ÒªÊÇÎªÁË¸øHASSÏÂÊôµÄÉè±¸Ìá¹©·þÎñÆ÷ÓÃ£¬ËùÒÔÔö¼ÓÁËÒ»Ð©Ïà¹ØµÄÅäÖÃ
+ã€€ã€€è¿™æ˜¯ä¸€ä¸ªå®¶ç”¨çš„ä¾¿äºŽ Docker å®‰è£…çš„ MQTT æœåŠ¡å™¨ï¼ŒæœåŠ¡å™¨é‡‡ç”¨ `mosquitto`ã€‚ä¸»è¦å†…å®¹å‚ç…§ [ncarlier/mqtt](https://hub.docker.com/r/ncarlier/mqtt)ã€‚ä½†æ˜¯å®¶é‡Œä¸»è¦æ˜¯ä¸ºäº†ç»™HASSä¸‹å±žçš„è®¾å¤‡æä¾›æœåŠ¡å™¨ç”¨ï¼Œæ‰€ä»¥å¢žåŠ äº†ä¸€äº›ç›¸å…³çš„é…ç½®
 
-# Ôö¼ÓµÄÅäÖÃÄÚÈÝ
+# å¢žåŠ çš„é…ç½®å†…å®¹
 
-¡¡¡¡ÔÚ /etc/mosquitto/mosquitto.conf ÎÄ¼þÖÐÔö¼ÓÁËÒÔÏÂÄÚÈÝ
+ã€€ã€€åœ¨ /etc/mosquitto/mosquitto.conf æ–‡ä»¶ä¸­å¢žåŠ äº†ä»¥ä¸‹å†…å®¹
 
 ```
 port 1883
@@ -13,12 +13,14 @@ protocol websockets
 allow_anonymous false
 ```
 
-# Ê¹ÓÃ·½·¨
+# ä½¿ç”¨æ–¹æ³•
 
-¡¡¡¡¼ÓÈë¸Ã¾µÏñÆô¶¯Docker¼´¿É£¬È»ºóÍ¨¹ý¿ØÖÆÌ¨²ÉÓÃÒÔÏÂÃüÁîÉèÖÃÓÃ»§ÃûÃÜÂë
+åŠ å…¥è¯¥é•œåƒå¯åŠ¨Dockerå³å¯ï¼Œç„¶åŽé€šè¿‡æŽ§åˆ¶å°é‡‡ç”¨ä»¥ä¸‹å‘½ä»¤è®¾ç½®ç”¨æˆ·åå¯†ç 
 
 ```
 mosquitto_passwd -b /etc/mosquitto/pwfile.example username password
 ```
 
-¡¡¡¡µ±È»Èç¹ûÏëÔÚÔËÐÐÈÝÆ÷µÄÊ±ºòÖ±½ÓÊ¹ÓÃCMDÃüÁîÀ´ÔËÐÐÒ²ÊÇ¿ÉÒÔµÄ¡£
+~~å½“ç„¶å¦‚æžœæƒ³åœ¨è¿è¡Œå®¹å™¨çš„æ—¶å€™ç›´æŽ¥ä½¿ç”¨CMDå‘½ä»¤æ¥è¿è¡Œä¹Ÿæ˜¯å¯ä»¥çš„ã€‚~~
+  
+  å‘½ä»¤ä¸­è¾“å…¥ç”¨æˆ·åç©ºæ ¼å¯†ç å³å¯
