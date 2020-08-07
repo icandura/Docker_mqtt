@@ -18,4 +18,6 @@ RUN echo "listener 1884" >> /etc/mosquitto/mosquitto.conf
 RUN echo "protocol websockets" >> /etc/mosquitto/mosquitto.conf
 RUN echo "allow_anonymous false" >> /etc/mosquitto/mosquitto.conf
 
-ENTRYPOINT ["mosquitto"]
+RUN mosquitto -d
+
+ENTRYPOINT ["mosquitto_passwd","-b","/etc/mosquitto/pwfile.example"]
