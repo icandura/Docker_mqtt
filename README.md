@@ -15,12 +15,9 @@ allow_anonymous false
 
 # 使用方法
 
-加入该镜像启动Docker即可，然后通过控制台采用以下命令设置用户名密码
+加入该镜像启动Docker即可，默认用户名 mqtt，密码 mqtt123
+之后也可以通过控制台采用以下命令设置用户名密码
 
 ```
 mosquitto_passwd -b /etc/mosquitto/pwfile.example username password
 ```
-
-~~当然如果想在运行容器的时候直接使用CMD命令来运行也是可以的。~~
-  
-  命令中输入用户名空格密码即可

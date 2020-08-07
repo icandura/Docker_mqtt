@@ -17,7 +17,6 @@ RUN echo "port 1883" >> /etc/mosquitto/mosquitto.conf
 RUN echo "listener 1884" >> /etc/mosquitto/mosquitto.conf
 RUN echo "protocol websockets" >> /etc/mosquitto/mosquitto.conf
 RUN echo "allow_anonymous false" >> /etc/mosquitto/mosquitto.conf
+RUN mosquitto_passwd -b /etc/mosquitto/pwfile.example mqtt mqtt123
 
-RUN mosquitto -d
-
-ENTRYPOINT ["mosquitto_passwd","-b","/etc/mosquitto/pwfile.example"]
+ENTRYPOINT ["mosquitto"]
